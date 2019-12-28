@@ -15,7 +15,12 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	return render_template('index.html', name=name)     
+	return render_template('index.html', name=name)   
+
+@app.route('/python_apps')
+def python_apps_page():
+	# testing stuff
+	return render_template('python_apps.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)

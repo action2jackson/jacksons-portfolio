@@ -1,0 +1,89 @@
+{% extends "index.html" %} 
+
+{% block title %}Python Apps{% endblock %}
+
+{% block content %}
+
+   <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="https://cdn.shopify.com/s/files/1/1417/3822/files/coo.png?2704" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Javascript Blackjack Game</h1>
+                        <hr class="star-light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Blackjack -->
+    <div class="container-1">
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+        <h3><span id="blackjack-result">Let's play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/blackjack.js"></script>
+
+         <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2></h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <h4><i>General</i></h4>
+                    <p>I was born and raised in Winnipeg, Manitoba, which is as cold as the North Pole in the winter and as hot as California in the summer! I love waking up early in the morning so I can watch the sunrise and get a sufficient amount of work done before the day even starts. I have an equal balance of introvert and extrovert qualities. I am able to communicate with confidence and clear direction and I am also able to get into my own zone excluded from the outside world. </p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><i>Physical activity</i></h4>
+                    <p>I am a physically active person. I have played many sports like football, volleyball, badminton, golf, spikeball and I am currently playing basketball. One of the things I am most proud of is consistently hitting the gym with various strength and endurance workouts for the past 3 years. My favorite thing about working out is it allows me to stay at my desk for longer peiods of time without getting jittery!</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4><i>Learning behaviour</i></h4>
+                    <p>I am an avid learner and love the feeling of solving a difficult problem. Years ago I used to get dopamine rushes from playing video games or watching TV, but I have successfully rewired my brain to get dopamine rushes from learning something new or solving a problem. I personally learn best from a video formatted lesson or a book, this is why I always start my day by watching an educational video or tutorial of some sort and end it by reading a book.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock%}
