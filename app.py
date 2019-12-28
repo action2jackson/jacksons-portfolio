@@ -15,7 +15,11 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	return render_template('index.html', name=name)   
+	return render_template('index.html', name=name)  
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html')
 
 @app.route('/python_apps')
 def python_apps_page():
